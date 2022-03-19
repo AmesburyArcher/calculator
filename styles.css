@@ -30,7 +30,19 @@ body {
     background: #999;
     margin: 1.5em 2em 3em 2em;
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
+#lower-screen {
+    text-align: right;
+    padding: 0.5em;
+}
+
+#upper-screen {
+    text-align: right;
+    padding: 0.5em;
 }
 
 #btn-grid {

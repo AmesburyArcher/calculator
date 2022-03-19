@@ -12,30 +12,33 @@
     <main id="main">
     <div id="calc-container">
         <div id="screen-container">
-
+            <div id="upper-screen">
+            </div>
+            <div id="lower-screen">
+            </div>
         </div>
         <div id="btn-grid">
-        <button class="btn clear-btn">clear</button>
-        <button class="btn operator">&divide;</button>
+        <button class="btn clear-btn" id="clear">clear</button>
+        <button class="btn operator" id="divide">&divide;</button>
 
-        <button class="btn digit" value="7">7</button>
-        <button class="btn digit" value="8">8</button>
-        <button class="btn digit" value="9">9</button>
-        <button class="btn operator">x</button>
+        <button class="btn digit" id="seven" value="7">7</button>
+        <button class="btn digit" id="eight" value="8">8</button>
+        <button class="btn digit" id="nine" value="9">9</button>
+        <button class="btn operator" id="multiply">x</button>
 
-        <button class="btn digit" value="4">4</button>
-        <button class="btn digit" value="5">5</button>
-        <button class="btn digit" value="6">6</button>
-        <button class="btn operator">-</button>
+        <button class="btn digit" id="four" value="4">4</button>
+        <button class="btn digit" id="five" value="5">5</button>
+        <button class="btn digit" id="six" value="6">6</button>
+        <button class="btn operator" id="subtract">-</button>
 
-        <button class="btn digit" value="1">1</button>
-        <button class="btn digit" value="2">2</button>
-        <button class="btn digit" value="3">3</button>
-        <button class="btn operator">+</button>
+        <button class="btn digit" id="one" value="1">1</button>
+        <button class="btn digit" id="two" value="2">2</button>
+        <button class="btn digit" id="three" value="3">3</button>
+        <button class="btn operator" id="add">+</button>
 
-        <button class="btn digit zero-btn" value="0">0</button>
-        <button class="btn decimal" value=".">.</button>
-        <button class="btn equals" value="=">=</button>
+        <button class="btn digit zero-btn" id="zero" value="0">0</button>
+        <button class="btn decimal" id="decimal" value=".">.</button>
+        <button class="btn equals" id="equal" value="=">=</button>
         
         </div>
     </div>
