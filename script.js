@@ -48,6 +48,7 @@ operatorButtons.forEach(btn => {
 })
 
 function inputOperator(operatorInput) {
+    if(currentNum === '' && previousNum === '') return;
     if(previousNum === '') {
         previousNum = currentNum;
         operatorCheck(operatorInput);

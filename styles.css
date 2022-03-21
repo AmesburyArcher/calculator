@@ -38,11 +38,13 @@ body {
 #lower-screen {
     text-align: right;
     padding: 0.5em;
+    font-size: 20px;
 }
 
 #upper-screen {
     text-align: right;
     padding: 0.5em;
+    font-size: 20px;
 }
 
 #btn-grid {
