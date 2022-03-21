@@ -31,7 +31,7 @@ numberButtons.forEach(btn => {
 })
 
 function inputNumber(number) {
-    if(previousNum !== '' && currentNum !== '' && operator === '') {
+    if(previousNum !== '' && currentNum === '' && operator === '') {
         previousNum = '';
         currentDisplayNumber.textContent = currentNum;
     }
