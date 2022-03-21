@@ -18,27 +18,28 @@
             </div>
         </div>
         <div id="btn-grid">
-        <button class="btn clear-btn" id="clear">clear</button>
-        <button class="btn operator" id="divide">&divide;</button>
+        <button class="btn clear-btn" id="clear">CLEAR</button>
+        <button class="btn backspace-btn" id="backspace">UNDO</button>
+        <button class="btn operator" data-key="111" id="divide">÷</button>
 
-        <button class="btn digit" id="seven" value="7">7</button>
-        <button class="btn digit" id="eight" value="8">8</button>
-        <button class="btn digit" id="nine" value="9">9</button>
-        <button class="btn operator" id="multiply">x</button>
+        <button class="btn digit" id="seven" data-key="55" value="7">7</button>
+        <button class="btn digit" id="eight" data-key="56" value="8">8</button>
+        <button class="btn digit" id="nine" data-key="57" value="9">9</button>
+        <button class="btn operator" data-key="106" id="multiply">x</button>
 
-        <button class="btn digit" id="four" value="4">4</button>
-        <button class="btn digit" id="five" value="5">5</button>
-        <button class="btn digit" id="six" value="6">6</button>
-        <button class="btn operator" id="subtract">-</button>
+        <button class="btn digit" id="four" data-key="52" value="4">4</button>
+        <button class="btn digit" id="five" data-key="53" value="5">5</button>
+        <button class="btn digit" id="six" data-key="54" value="6">6</button>
+        <button class="btn operator" data-key="109" id="subtract">-</button>
 
-        <button class="btn digit" id="one" value="1">1</button>
-        <button class="btn digit" id="two" value="2">2</button>
-        <button class="btn digit" id="three" value="3">3</button>
-        <button class="btn operator" id="add">+</button>
+        <button class="btn digit" id="one" data-key="49" value="1">1</button>
+        <button class="btn digit" id="two" data-key="50" value="2">2</button>
+        <button class="btn digit" id="three" data-key="51" value="3">3</button>
+        <button class="btn operator" data-key="107" id="add">+</button>
 
-        <button class="btn digit zero-btn" id="zero" value="0">0</button>
-        <button class="btn decimal" id="decimal" value=".">.</button>
-        <button class="btn equals" id="equal" value="=">=</button>
+        <button class="btn digit zero-btn" id="zero" data-key="48" value="0">0</button>
+        <button class="btn decimal" id="decimal" data-key="110" value=".">.</button>
+        <button class="btn equals" id="equal" data-key="187" value="=">=</button>
         
         </div>
     </div>

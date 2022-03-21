@@ -16,6 +16,9 @@ decimal.addEventListener('click', () => {
 const clear = document.querySelector('#clear');
 clear.addEventListener('click', clearCalc);
 
+const undo = document.querySelector('#backspace');
+undo.addEventListener('click', deleteInput);
+
 const numberButtons = document.querySelectorAll('.digit');
 const operatorButtons = document.querySelectorAll('.operator');
 
@@ -125,3 +128,35 @@ function addDecimal() {
         currentDisplayNumber.textContent = currentNum;
     }
 }
+
+function deleteInput() { 
+    currentDisplayNumber.textContent = currentDisplayNumber.textContent.slice(0, currentDisplayNumber.textContent.length - 1);
+    currentNum = currentNum.slice(0, currentNum.length - 1);
+}
+
+// adding functionality for keyboard input 
+
+window.addEventListener('keydown', keyboardInput);
+
+function keyboardInput(e) {
+    e.preventDefault();
+    if(e.key >= 0 && e.key <=9) {
+        inputNumber(e.key);
+    }
+    else if(e.key === '+' || e.key === '-') {
+        inputOperator(e.key);
+    }
+    else if(e.key === '/') {
+        inputOperator('÷');
+    }
+    else if(e.key === '*') {
+        inputOperator('x');
+    }
+    else if(e.key === '=') {
+        calculate();
+    }
+    else if(e.keyCode === 8) {
+        deleteInput();
+    }
+}
+
